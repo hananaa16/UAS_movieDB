@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieNowPlayingComponent } from './movie-now-playing/movie-now-playing.component';
-import { MovieUpcomingComponent } from './movie-upcoming/pengurus-list.component';
+import { MovieUpcomingComponent } from './movie-upcoming//movie-upcoming.component';
 import { MovieRecommendationComponent } from './movie-recommendation/movie-recommendation.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 
