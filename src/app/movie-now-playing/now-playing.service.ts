@@ -9,7 +9,6 @@ import { Movie } from './movie';
 @Injectable()
 export class NowPlayingService {
   private url = 'https://api.themoviedb.org/3/movie/';
-  private searchUrl = 'https://api.themoviedb.org/3/search/movie';
   private apiKey = '68b4fe2a513155a58dd0af4adacb281b';
   private language;
 
@@ -24,13 +23,6 @@ export class NowPlayingService {
     return this.http.get(moviesUrl)
       .map(this.extractData)
       .catch(this.handleError);
-  }
-
-  searchMovies(query: string) {
-    let searchUrl = `${this.searchUrl}?api_key=${this.apiKey}&language=${this.language}&query=${query}`;
-
-    return this.http.get(searchUrl)
-      .map((res) => { return res.json() })
   }
 
   getDetails(id : number) {
