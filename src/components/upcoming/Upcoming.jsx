@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { fetchMoviesUpcoming } from "../../service";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import { Link } from "react-router-dom";
-import { Nav } from 'react-bootstrap';
-import { Button } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 export function MovieUpcoming() {
     const [upcoming, setUpcoming] = useState([]);
@@ -34,13 +33,18 @@ export function MovieUpcoming() {
 
     return (
         <div className="container">
-            <h1 className="mt-3" style={{ textAlign: "center" }}>Dream On! Cinema</h1><br></br>
-            <Nav className="ml-auto justify-content-center" defaultActiveKey="/upcoming/Upcoming">
-                <Nav.Item className="mynav2"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
-                <Nav.Item className="mynav2"><Nav.Link href="/nowplaying/NowPlaying">Now Playing</Nav.Link></Nav.Item>
-                <Nav.Item className="mynav2"><Nav.Link href="/popular/Popular">Popular</Nav.Link></Nav.Item>
-                <Nav.Item className="mynav"><Nav.Link href="/upcoming/Upcoming">Upcoming</Nav.Link></Nav.Item>
-            </Nav><br></br>
+            <Navbar className="mt-3 col-lg-12 color-nav">
+                <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
+                <Nav className="mr-auto justify-content-center" defaultActiveKey="/upcoming/Upcoming">
+                    <Nav.Item className="mynav2 ml-3 col-nav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+                    <Nav.Item className="mynav2 ml-3"><Nav.Link href="/nowplaying/NowPlaying">Now Playing</Nav.Link></Nav.Item>
+                    <Nav.Item className="mynav2 ml-3"><Nav.Link href="/popular/Popular">Popular</Nav.Link></Nav.Item>
+                    <Nav.Item className="mynav ml-3"><Nav.Link href="/upcoming/Upcoming">Upcoming</Nav.Link></Nav.Item>
+                </Nav>
+                <Nav className="justify-content-end">
+                    <Nav.Item className="mynav2 mr-sm-2"><Nav.Link href="/aboutUs/AboutUs">About Us</Nav.Link></Nav.Item>
+                </Nav>
+            </Navbar><br></br>
             <h2 style={{ textAlign: "center" }}>Upcoming</h2>
             <div className="row mt-2">
                 <div className="row mt-3">{movies}</div>
@@ -49,11 +53,6 @@ export function MovieUpcoming() {
                 <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
                 <h3>Created By</h3>
                 <p>&copy; Team C#<br></br>2020</p>
-                <div className="col-sm-12">
-                <Link to="/aboutus/AboutUs">
-                    <Button variant="outline-info">About Us</Button>
-                </Link>
-                </div>
                 </div>
             </div>
         </div>
