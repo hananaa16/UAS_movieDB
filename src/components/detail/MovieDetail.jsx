@@ -11,6 +11,7 @@ import ReactPlayer from "react-player";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import { Nav } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 export function MovieDetail({ match }) {
   let params = match.params;
@@ -216,6 +217,17 @@ export function MovieDetail({ match }) {
       <div className="row mt-3">{similarMovieList}</div>
 
       <hr className="mt-5" style={{ borderTop: "1px solid #5a606b" }}></hr>
+       <div className="row mt-5">
+                <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
+                <h3>Created By</h3>
+                <p>&copy; Team C#<br></br>2020</p>
+                <div className="col-sm-12">
+                <Link to="/aboutus/AboutUs">
+                    <Button variant="outline-info">About Us</Button>
+                </Link>
+                </div>
+                </div>
+            </div>
 
     </div>
   );
