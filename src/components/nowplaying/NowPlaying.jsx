@@ -18,7 +18,6 @@ export function NowPlaying() {
 
   const movies = nowPlaying.slice(0,20).map((item, index) => {
     return (
-      <link rel="icon" href="./public/dreamon.png" />
       <div className="col-md-3 col-sm-6" key={index}>
       <div className="card">
         <Link to={`/movie/${item.id}`}>
