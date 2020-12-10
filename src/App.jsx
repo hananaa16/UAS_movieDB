@@ -4,7 +4,8 @@ import { Switch, Route } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { MovieUpcoming } from "./components/upcoming/Upcoming";
 import { NowPlaying } from "./components/nowplaying/NowPlaying";
-import { MovieDetail } from "./components/moviedetail/MovieDetail";
+import { PopularMovie } from "./components/popular/Popular";
+import { MovieDetail } from "./components/detail/movieDetail";
 
 export function App() {
   return (
@@ -12,8 +13,9 @@ export function App() {
       <Switch>
         <Route path="/" component={ Home } exact />
         <Route path="/nowplaying/NowPlaying" component={ NowPlaying } />
+        <Route path="/popular/Popular" component={ PopularMovie } />
         <Route path="/upcoming/Upcoming" component={ MovieUpcoming } />
-        <Route path="/movie/:id" component={MovieDetail} />
+        <Route path="/movie/:id" component={ MovieDetail } />
       </Switch>
     </main>
   );
