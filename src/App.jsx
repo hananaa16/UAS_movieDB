@@ -6,6 +6,7 @@ import { MovieUpcoming } from "./components/upcoming/Upcoming";
 import { NowPlaying } from "./components/nowplaying/NowPlaying";
 import { PopularMovie } from "./components/popular/Popular";
 import { MovieDetail } from "./components/detail/MovieDetail";
+import { AboutUs } from "./components/aboutus/AboutUs";
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
         <Route path="/popular/Popular" component={ PopularMovie } />
         <Route path="/upcoming/Upcoming" component={ MovieUpcoming } />
         <Route path="/movie/:id" component={ MovieDetail } />
+        <Route path="/aboutus/Aboutus" component= { AboutUs } />
       </Switch>
     </main>
   );
