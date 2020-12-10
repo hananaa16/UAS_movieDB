@@ -6,7 +6,7 @@ import { MovieUpcoming } from "./components/upcoming/Upcoming";
 import { NowPlaying } from "./components/nowplaying/NowPlaying";
 import { PopularMovie } from "./components/popular/Popular";
 import { MovieDetail } from "./components/detail/MovieDetail";
-import { AboutUs } from "./components/aboutus/AboutUs";
+import { AboutUs } from "./components/aboutUs/AboutUs";
 
 export function App() {
   return (

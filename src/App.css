@@ -38,16 +38,25 @@
 }
 
 .mynav {
-  background-color: white;
+  background-color: #fec763;
   border-radius: 5px;
 }
 
 .mynav:hover {
-  background-color: grey;
+  background-color:#a8dff5;
   border-radius: 5px;
 }
 
 .mynav2:hover {
-  background-color: grey;
+  background-color: #a8dff5;
   border-radius: 5px;
+}
+
+.color-nav {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.color-nav .col-nav {
+  color: white;
 }
