@@ -4,6 +4,7 @@ import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import { Link } from "react-router-dom";
 import ReactStars from "react-rating-stars-component";
 import { Nav } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 export function PopularMovie() {
     const [popular, setPopular] = useState([]);
@@ -50,6 +51,17 @@ export function PopularMovie() {
           <div className="row mt-2">
           <div className="row mt-3">{movies}</div>
           </div>
+            <div className="row mt-5">
+                <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
+                <h3>Created By</h3>
+                <p>&copy; Team C#<br></br>2020</p>
+                <div className="col-sm-12">
+                <Link to="/aboutus/AboutUs">
+                    <Button variant="outline-info">About Us</Button>
+                </Link>
+                </div>
+                </div>
+            </div>
         </div>
     );
 }
