@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchMovies } from "../../service";
+import { fetchMovies, fetchMoviesUpcoming } from "../../service";
 import RBCarousel from "react-bootstrap-carousel";
 import "react-bootstrap-carousel/dist/react-bootstrap-carousel.css";
 import { Link } from "react-router-dom";
@@ -8,10 +8,12 @@ import { Nav } from 'react-bootstrap';
 
 export function Home() {
   const [nowPlaying, setNowPlaying] = useState([]);
+  const [upcoming, setUpcoming] = useState([]);
 
   useEffect(() => {
     const fetchAPI = async () => {
       setNowPlaying(await fetchMovies());
+      setUpcoming(await fetchMoviesUpcoming());
     };
 
     fetchAPI();
@@ -33,9 +35,9 @@ export function Home() {
     );
   });
 
-  const playing = nowPlaying.slice(0,8).map((item, index) => {
+  const playing = nowPlaying.slice(0,6).map((item, index) => {
     return (
-      <div className="col-md-3 col-sm-6" key={index}>
+      <div className="col-md-2 col-sm-6" key={index}>
       <div className="card">
         <Link to={`/movie/${item.id}`}>
           <img className="img-fluid" src={item.poster} alt={item.title}></img>
@@ -52,6 +54,22 @@ export function Home() {
       </div>
     </div>
     );
+  });
+
+  const up = upcoming.slice(0,6).map((item, index) => {
+    return (
+      <div className="col-md-2 col-sm-6" key={index}>
+      <div className="card">
+        <Link to={`/movie/${item.id}`}>
+          <img className="img-fluid" src={item.poster} alt={item.title}></img>
+        </Link>
+      </div>
+      <div className="mt-3">
+        <p style={{ fontWeight: "bolder" }}>{item.title}</p>
+        <p>{item.date}</p>
+      </div>
+    </div>
+    )
   })
 
   return (
@@ -74,8 +92,15 @@ export function Home() {
         </RBCarousel>
       </div>
       <div className="row mt-2">
+        <h4 className="mt-3">Now Playing</h4>
         <div className="row mt-3">
           {playing}
+        </div>
+      </div>
+      <div className="row mt-2">
+        <h4 className="mt-3">Upcoming</h4>
+        <div className="row mt-3">
+          {up}
         </div>
       </div>
     </div>
