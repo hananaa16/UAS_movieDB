@@ -5,7 +5,7 @@ import { Home } from "./components/home/Home";
 import { MovieUpcoming } from "./components/upcoming/Upcoming";
 import { NowPlaying } from "./components/nowplaying/NowPlaying";
 import { PopularMovie } from "./components/popular/Popular";
-import { MovieDetail } from "./components/detail/movieDetail";
+import { MovieDetail } from "./components/detail/MovieDetail";
 
 export function App() {
   return (
