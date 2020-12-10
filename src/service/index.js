@@ -3,7 +3,7 @@ import axios from 'axios';
 const apiKey = 'a5a91c505656ea92e6cf88e4f0756deb';
 const url = 'https://api.themoviedb.org/3';
 const nowPlayingUrl = `${url}/movie/now_playing`;
-const topratedUrl = `${url}/movie/top_rated`;
+const popularUrl = `${url}/movie/popular`;
 const movieUrl = `${url}/movie`;
 const genreUrl = `${url}/genre/movie/list`;
 const moviesUrl = `${url}/discover/movie`;
@@ -119,9 +119,9 @@ export const fetchPersons = async () => {
     } catch (error) { }
 }
 
-export const fetchTopratedMovie = async () => {
+export const fetchPopularMovie = async () => {
     try {
-        const { data } = await axios.get(topratedUrl, {
+        const { data } = await axios.get(popularUrl, {
             params: {
                 api_key: apiKey,
                 language: 'en_US',
