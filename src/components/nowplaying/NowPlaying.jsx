@@ -45,6 +45,7 @@ export function NowPlaying() {
       <Nav className="ml-auto justify-content-center" defaultActiveKey="/nowplaying/NowPlaying">
         <Nav.Item className="mynav2"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
         <Nav.Item className="mynav"><Nav.Link href="/nowplaying/NowPlaying">Now Playing</Nav.Link></Nav.Item>
+        <Nav.Item className="mynav2"><Nav.Link href="/popular/Popular">Popular</Nav.Link></Nav.Item>
         <Nav.Item className="mynav2"><Nav.Link href="/upcoming/Upcoming">Upcoming</Nav.Link></Nav.Item>
       </Nav><br></br>
       <h2 style={{ textAlign: "center"}}>Now Playing</h2>
