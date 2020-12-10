@@ -10,7 +10,7 @@ export function AboutUs() {
     <div className="container">
       <h1 className="mt-3" style={{ textAlign: "center"}}>Dream On! Cinema</h1><br></br>
       <Nav className="ml-auto justify-content-center" defaultActiveKey="/">
-        <Nav.Item className="mynav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
+        <Nav.Item className="mynav2"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
         <Nav.Item className="mynav2"><Nav.Link href="/nowplaying/NowPlaying">Now Playing</Nav.Link></Nav.Item>
         <Nav.Item className="mynav2"><Nav.Link href="/popular/Popular">Popular</Nav.Link></Nav.Item>
         <Nav.Item className="mynav2"><Nav.Link href="/upcoming/Upcoming">Upcoming</Nav.Link></Nav.Item>
