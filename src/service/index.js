@@ -24,7 +24,7 @@ export const fetchMovies = async () => {
         const modifiedData = data['results'].map((m) => ({
             id: m['id'],
             backPoster: posterUrl + m['backdrop_path'],
-            popularity: m['popularith'],
+            popularity: m['popularity'],
             title: m['title'],
             poster: posterUrl + m['poster_path'],
             overview: m['overview'],
