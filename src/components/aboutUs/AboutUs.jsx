@@ -8,7 +8,7 @@ export function AboutUs() {
 
   return (
     <div>
-      <Navbar className="col-lg-12 color-nav">
+      <Navbar className="col-lg-12 color-nav" sticky="top">
         <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
         <Nav className="mr-auto justify-content-center" defaultActiveKey="/aboutUs/AboutUs">
           <Nav.Item className="mynav2 ml-3 col-nav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
