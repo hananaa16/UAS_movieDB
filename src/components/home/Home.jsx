@@ -99,7 +99,7 @@ export function Home() {
 
   return (
     <div>
-      <Navbar className="col-lg-12 color-nav">
+      <Navbar className="col-lg-12 color-nav" sticky="top">
         <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
         <Nav className="mr-auto justify-content-center" defaultActiveKey="/">
           <Nav.Item className="mynav ml-3 col-nav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
