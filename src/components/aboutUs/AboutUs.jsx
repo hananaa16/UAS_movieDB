@@ -29,7 +29,7 @@ export function AboutUs() {
             <br></br>
             <p style={{ fontSize: "30px" }}>Hana Agatha</p>
             <p style={{ fontSize: "20px" }}>00000035764</p>
-            <a href="https://www.instagram.com/h_agatha/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+            <a href="https://www.instagram.com/h_agatha/?hl=id" target="_blank" style={{ color: "#f4c10f", fontSize: "50px" }}>
                 <i className="fab fa-instagram"></i>
             </a>
         </div>
@@ -37,7 +37,7 @@ export function AboutUs() {
             <img className="img-fluid" src={irena} alt="irena" style= {{height:"300px"}}></img>
             <p style={{ fontSize: "30px" }}>Tania Irena</p>
             <p style={{ fontSize: "20px" }}>00000035961</p>
-            <a href="https://www.instagram.com/tanikohiranuma/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+            <a href="https://www.instagram.com/tanikohiranuma/?hl=id" target="_blank" style={{ color: "#f4c10f", fontSize: "50px" }}>
                 <i className="fab fa-instagram"></i>
             </a>
         </div>
@@ -45,7 +45,7 @@ export function AboutUs() {
           <img className="img-fluid" src={denisha} alt="denisha" style= {{height:"300px"}}></img>
             <p style={{ fontSize: "30px" }}>Anastasia Denisha</p>
             <p style={{ fontSize: "20px" }}>00000034981</p>
-            <a href="https://www.instagram.com/denisha26/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+            <a href="https://www.instagram.com/denisha26/?hl=id" target="_blank" style={{ color: "#f4c10f", fontSize: "50px" }}>
                 <i className="fab fa-instagram"></i>
             </a> 
         </div>
