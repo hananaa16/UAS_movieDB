@@ -119,7 +119,7 @@ export function MovieDetail({ match }) {
 
   return (
     <div>
-      <Navbar className="mt-3 col-lg-12 color-nav">
+      <Navbar className="col-lg-12 color-nav">
         <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
         <Nav className="mr-auto justify-content-center" defaultActiveKey="">
           <Nav.Item className="mynav2 ml-3 col-nav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
