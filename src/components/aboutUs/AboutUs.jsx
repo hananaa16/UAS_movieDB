@@ -26,12 +26,15 @@ export function AboutUs() {
       <div className="row mt-3 mb-5">
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={hana} alt="hana" style= {{height:"300px"}}></img>
+            <p>Hana Agatha</p>
         </div>
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={irena} alt="irena" style= {{height:"300px"}}></img>
+            <p>Tania Irena Gunawan>/p>
         </div>
-        <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
-        <img className="img-fluid" src={denisha} alt="denisha" style= {{height:"300px"}}></img>
+          <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
+          <img className="img-fluid" src={denisha} alt="denisha" style= {{height:"300px"}}></img>
+            <p>Anatasia Denisha Anastasia Denisha Danoehoesodo</p>  
         </div>
        </div>
        </div>
