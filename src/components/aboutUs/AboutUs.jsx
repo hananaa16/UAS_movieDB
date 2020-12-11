@@ -51,6 +51,12 @@ export function AboutUs() {
         </div>
        </div>
        </div>
+      <div className="row mt-5">
+                <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
+                <h3>Created By</h3>
+                <p>&copy; Team C#<br></br>2020</p>
+                </div>
+        </div>
     </div>
   );
 }
