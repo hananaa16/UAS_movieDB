@@ -8,7 +8,7 @@ export function AboutUs() {
 
   return (
     <div>
-      <Navbar className="col-lg-12 color-nav" sticky="top">
+      <Navbar className="col-lg-12 color-nav">
         <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
         <Nav className="mr-auto justify-content-center" defaultActiveKey="/aboutUs/AboutUs">
           <Nav.Item className="mynav2 ml-3 col-nav"><Nav.Link href="/">Home</Nav.Link></Nav.Item>
@@ -51,6 +51,8 @@ export function AboutUs() {
         </div>
        </div>
        </div>
+      <p style={{ fontSize: "30px", textAlign: "center" }}>Universitas Multimedia Nusantara</p>
+      <p style={{ fontSize: "25px", textAlign: "center" }}>Informatics Faculty</p>
       <div className="row mt-5">
                 <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
                 <h3>Created By</h3>
