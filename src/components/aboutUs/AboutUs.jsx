@@ -3,6 +3,7 @@ import { Nav, Navbar } from 'react-bootstrap';
 import hana from './hana.jpg';
 import denisha from './denisha.jpg';
 import irena from './iren.jpg';
+import umn from './umn.png';
 
 export function AboutUs() {
 
