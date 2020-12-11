@@ -131,7 +131,7 @@ export function MovieDetail({ match }) {
           <Nav.Item className="mynav2 mr-sm-2"><Nav.Link href="/aboutUs/AboutUs">About Us</Nav.Link></Nav.Item>
         </Nav>
       </Navbar><br></br>
-      <div className="container>
+      <div className="container">
       <div className="row mt-2">
         <MoviePlayerModal
           show={isOpen}
