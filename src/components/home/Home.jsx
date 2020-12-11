@@ -124,7 +124,7 @@ export function Home() {
         </RBCarousel>
       </div><br></br>
       </div>
-      <div style={{backgroundColor: "#E16F56"}}>
+      <div className="mt-2" style={{backgroundColor: "#E16F56"}}>
       <div className="container">
       <div className="row mt-2">
         <h4 className="mt-3">Now Playing</h4>
@@ -134,7 +134,7 @@ export function Home() {
       </div>
       </div>
       </div>
-      <div className="container">
+      <div className="container mt-2">
       <div className="row mt-2">
         <h4 className="mt-3">Popular</h4>
         <div className="row mt-3">
@@ -142,7 +142,7 @@ export function Home() {
         </div>
       </div>
       </div>
-      <div style={{backgroundColor: "#c78a44"}}>
+      <div className="mt-2" style={{backgroundColor: "#c78a44"}}>
       <div className="container">
       <div className="row mt-2">
         <h4 className="mt-4">Upcoming</h4>
