@@ -34,7 +34,7 @@ export function AboutUs() {
         </div>
           <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
           <img className="img-fluid" src={denisha} alt="denisha" style= {{height:"300px"}}></img>
-            <p>Anatasia Denisha Anastasia Denisha Danoehoesodo</p>  
+            <p>Anastasia Denisha Danoehoesodo</p>  
         </div>
        </div>
        </div>
