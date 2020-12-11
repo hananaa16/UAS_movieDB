@@ -26,15 +26,28 @@ export function AboutUs() {
       <div className="row mt-3 mb-5">
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={hana} alt="hana" style= {{height:"300px"}}></img>
-            <p>Hana Agatha</p>
+            <br></br>
+            <p style={{ fontSize: "30px" }}>Hana Agatha</p>
+            <p style={{ fontSize: "20px" }}>00000035764</p>
+            <a href="https://www.instagram.com/h_agatha/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+                <i className="fab fa-instagram"></i>
+            </a>
         </div>
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={irena} alt="irena" style= {{height:"300px"}}></img>
-            <p>Tania Irena Gunawan</p>
+            <p style={{ fontSize: "30px" }}>Tania Irena</p>
+            <p style={{ fontSize: "20px" }}>00000035961</p>
+            <a href="https://www.instagram.com/tanikohiranuma/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+                <i className="fab fa-instagram"></i>
+            </a>
         </div>
           <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
           <img className="img-fluid" src={denisha} alt="denisha" style= {{height:"300px"}}></img>
-            <p>Anastasia Denisha Danoehoesodo</p>  
+            <p style={{ fontSize: "30px" }}>Anastasia Denisha</p>
+            <p style={{ fontSize: "20px" }}>00000034981</p>
+            <a href="https://www.instagram.com/denisha26/?hl=id" style={{ color: "#f4c10f", fontSize: "50px" }}>
+                <i className="fab fa-instagram"></i>
+            </a> 
         </div>
        </div>
        </div>
