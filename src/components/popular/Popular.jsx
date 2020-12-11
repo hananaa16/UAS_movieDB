@@ -26,6 +26,7 @@ export function PopularMovie() {
                 </div>
                 <div className="mt-3">
                     <p style={{ fontWeight: "bolder "}}>{item.title}</p>
+                    <p>Popularity: {item.popularity}</p>
                     <p>Rated: {item.rating}</p>
                     <ReactStars
                     count={item.rating}
