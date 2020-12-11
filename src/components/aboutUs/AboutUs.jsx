@@ -23,7 +23,7 @@ export function AboutUs() {
       </Navbar><br></br>
       <div className="container">
       <h1 style={{textAlign: "center"}}>About Us</h1>
-      <h3 style={{textAlign: "center"}}>C# Group. (IF300-E) Introduction to Internet Technology Project Test </h3>
+      <h3 style={{textAlign: "center"}}>C# Group. (IF300-E & IF300-EL) Introduction to Internet Technology Project Test </h3>
       <div className="row mt-3 mb-5">
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={hana} alt="hana" style= {{height:"300px"}}></img>
@@ -53,7 +53,7 @@ export function AboutUs() {
        </div>
        </div>
       <div style={{ color: "white", textAlign: "center" }}>
-        <img  src={umn} alt="umn" style= {{ heigth: "30px", textAlign: "center" }}></img>
+        <img  src={umn} alt="umn" style= {{ height: "200px", textAlign: "center" }}></img>
         <p style={{ fontSize: "30px", textAlign: "center" }}>Universitas Multimedia Nusantara</p>
         <p style={{ fontSize: "25px", textAlign: "center" }}>Informatics Faculty</p>
       </div>
