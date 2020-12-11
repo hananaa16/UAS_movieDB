@@ -26,6 +26,7 @@ export function NowPlaying() {
       </div>
       <div className="mt-3">
         <p style={{ fontWeight: "bolder" }}>{item.title}</p>
+        <p>{item.date}</p>
         <p>Rated: {item.rating}</p>
         <ReactStars
           count={item.rating}
