@@ -118,7 +118,7 @@ export function MovieDetail({ match }) {
   });
 
   return (
-    <div className="container">
+    <div>
       <Navbar className="mt-3 col-lg-12 color-nav">
         <Navbar.Brand href="/">Dream On! Cinema</Navbar.Brand>
         <Nav className="mr-auto justify-content-center" defaultActiveKey="">
@@ -131,6 +131,7 @@ export function MovieDetail({ match }) {
           <Nav.Item className="mynav2 mr-sm-2"><Nav.Link href="/aboutUs/AboutUs">About Us</Nav.Link></Nav.Item>
         </Nav>
       </Navbar><br></br>
+      <div className="container>
       <div className="row mt-2">
         <MoviePlayerModal
           show={isOpen}
@@ -227,7 +228,7 @@ export function MovieDetail({ match }) {
                 <p>&copy; Team C#<br></br>2020</p>
                 </div>
             </div>
-
+       </div>
     </div>
   );
 }
