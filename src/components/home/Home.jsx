@@ -140,7 +140,7 @@ export function Home() {
         <div className="row mt-3">
           {pop}
         </div>
-      </div>
+      </div><br></br>
       </div>
       <div className="mt-2" style={{backgroundColor: "#c78a44"}}>
       <div className="container">
