@@ -78,18 +78,19 @@ export function MovieDetail({ match }) {
     });
   }
 
-  const castList = casts.slice(0, 4).map((c, i) => {
+  const castList = casts.slice(0, 6).map((c, i) => {
     return (
-      <div className="col-md-3 text-center" key={i}>
+      <div className="col-sm-2 text-center" key={i}>
         <img
           className="img-fluid rounded-circle mx-auto d-block"
           src={c.img}
           alt={c.name}
+           style={{borderRadius:"2em"}}
         ></img>
         <p className="font-weight-bold text-center">{c.name}</p>
         <p
           className="font-weight-light text-center"
-          style={{ color: "#5a606b" }}
+         style={{ color: "lightyellow" }}
         >
           {c.character}
         </p>
