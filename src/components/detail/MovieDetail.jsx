@@ -181,11 +181,12 @@ export function MovieDetail({ match }) {
             ></ReactStars>
           </div>
         </div>
-        <div className="row mt-3">
-          <div className="col">
-            <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
+      </div>
+        
+      <div className="row mt-3">
+        <div className="col">
+          <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
-          </div>
         </div>
       </div>
 
