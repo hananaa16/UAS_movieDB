@@ -53,7 +53,9 @@ export function AboutUs() {
        </div>
        </div>
       <div style={{ color: "white", textAlign: "center" }}>
-        <img  src={umn} alt="umn" style= {{ height: "200px", textAlign: "center" }}></img>
+        <a href="https://www.umn.ac.id/" target="_blank" rel="noopener noreferrer">
+          <img  src={umn} alt="umn" style= {{ height: "200px", textAlign: "center" }}></img>
+        </a>
         <p style={{ fontSize: "30px", textAlign: "center" }}>Universitas Multimedia Nusantara</p>
         <p style={{ fontSize: "25px", textAlign: "center" }}>Informatics Faculty</p>
       </div>
