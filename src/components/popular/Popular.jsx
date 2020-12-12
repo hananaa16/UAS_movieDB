@@ -18,10 +18,11 @@ export function PopularMovie() {
 
     const movies = popular.slice(0,20).map((item, index) => {
         return (
-            <div className="col-md-3 col-sm-6" key={index}>
+            <div className="col-md-3 col-sm-6 d-flex" key={index}>
+                <div className="card mt-4 flex-fill" style={{backgroundColor:"white"}}>
                 <div className="card">
                     <Link to={`/movie/${item.id}`}>
-                    <img className="img-fluid" src={item.poster} alt={item.title}></img>
+                    <img className="img-fluid" src={item.poster} style={{height:"400px"}} alt={item.title}></img>
                     </Link>
                 </div>
                 <div className="mt-3">
@@ -34,6 +35,7 @@ export function PopularMovie() {
                     color1={"#f4c10f"}
                     ></ReactStars>
                 </div>
+               </div>
             </div>
         );
     });
