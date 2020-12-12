@@ -160,19 +160,20 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>GENRE</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>GENRE</p>
         </div>
       </div>
 
-      <div className="row mt-3">
+      <div className="row mt-2">
         <div className="col">
-          <ul className="list-inline">{genresList}</ul>
+          <ul className="list-inline" style={{ color: "white" }}>{genresList}</ul>
         </div>
       </div>
 
       <div className="row mt-3">
         <div className="col">
           <div className="text-center">
+            <p style={{ color: "yellow", fontWeight: "bolder" }}>RATING</p>
             <ReactStars
               count={detail.vote_average}
               size={20}
@@ -180,7 +181,7 @@ export function MovieDetail({ match }) {
             ></ReactStars>
           </div>
           <div className="mt-3">
-            <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>OVERVIEW</p>
+            <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
           </div>
         </div>
@@ -203,7 +204,7 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>CASTS</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>CASTS</p>
         </div>
       </div>
       <div className="row mt-3">{castList}</div>
