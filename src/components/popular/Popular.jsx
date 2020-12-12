@@ -25,7 +25,7 @@ export function PopularMovie() {
                     <img className="img-fluid" src={item.poster} style={{height:"400px"}} alt={item.title}></img>
                     </Link>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 ml-2">
                     <p style={{ fontWeight: "bolder ", color:"black"}}>{item.title}</p>
                     <p style={{ color:"black"}}>Popularity: {item.popularity}</p>
                     <p style={{ color:"black"}}>Rated: {item.rating}</p>
