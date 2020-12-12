@@ -18,7 +18,8 @@ export function NowPlaying() {
 
   const movies = nowPlaying.slice(0,20).map((item, index) => {
     return (
-      <div className="col-md-3 col-sm-6" key={index}>
+      <div className="col-md-3 col-sm-6 d-flex" key={index}>
+        <div className="card mt-4 flex-fill">
       <div className="card">
         <Link to={`/movie/${item.id}`}>
           <img className="img-fluid" src={item.poster} alt={item.title}></img>
@@ -34,6 +35,7 @@ export function NowPlaying() {
           color1={"#f4c10f"}
         ></ReactStars>
       </div>
+     </div>
     </div>
     );
   });
