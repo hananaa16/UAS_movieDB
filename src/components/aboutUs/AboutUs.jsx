@@ -23,7 +23,8 @@ export function AboutUs() {
       </Navbar><br></br>
       <div className="container">
       <h1 style={{textAlign: "center"}}>About Us</h1>
-      <h3 style={{textAlign: "center"}}>C# Group. (IF300-E & IF300-EL) Introduction to Internet Technology Project Test </h3>
+      <h3 style={{textAlign: "center"}}>Team C#</h3>
+      <h3 style={{textAlign: "center"}}>(IF300-E & IF300-EL) Introduction to Internet Technology Project Test </h3>
       <div className="row mt-3 mb-5">
         <div className="col-md-4" style={{ color: "white", textAlign: "center" }}>
             <img className="img-fluid" src={hana} alt="hana" style= {{height:"300px"}}></img>
