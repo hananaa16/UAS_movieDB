@@ -26,9 +26,9 @@ export function NowPlaying() {
         </Link>
       </div>
       <div className="mt-3">
-        <p style={{ fontWeight: "bolder" }}>{item.title}</p>
-        <p>{item.date}</p>
-        <p>Rated: {item.rating}</p>
+        <p style={{ fontWeight: "bolder", color:"black" }}>{item.title}</p>
+        <p style={{ color: "black" }}>{item.date}</p>
+        <p style={{ color: "black" }}>Rated: {item.rating}</p>
         <ReactStars
           count={item.rating}
           size={20}
