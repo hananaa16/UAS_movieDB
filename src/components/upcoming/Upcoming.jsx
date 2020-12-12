@@ -24,7 +24,7 @@ export function MovieUpcoming() {
                     <img className="img-fluid" style={{height:"400px"}} src={item.poster} alt={item.title}></img>
                     </Link>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 ml-2">
                     <p style={{ fontWeight: "bolder", color:"black"}}>{item.title}</p>
                     <p style={{ color:"black" }}>{item.date}</p>
                 </div>
