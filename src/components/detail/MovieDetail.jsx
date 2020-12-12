@@ -180,10 +180,10 @@ export function MovieDetail({ match }) {
               color1={"#f4c10f"}
             ></ReactStars>
           </div>
-          <div className="mt-3">
+        </div>
+        <div className="row mt-3">
             <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
-          </div>
         </div>
       </div>
 
