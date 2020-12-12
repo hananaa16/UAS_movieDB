@@ -59,7 +59,6 @@ export function AboutUs() {
         <p style={{ fontSize: "30px", textAlign: "center" }}>Universitas Multimedia Nusantara</p>
         <p style={{ fontSize: "25px", textAlign: "center" }}>Informatics Faculty</p>
       </div>
-      <div className="container">
       <div className="row mt-5">
                 <div className="mt-5 mb-3 col-sm-12" style={{ textAlign: "center", padding: "5px" }}>
                 <h3>Created By</h3>
