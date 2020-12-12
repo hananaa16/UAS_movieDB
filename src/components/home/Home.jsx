@@ -42,7 +42,7 @@ export function Home() {
       <div className="col-md-2 col-sm-6" key={index}>
       <div className="card">
         <Link to={`/movie/${item.id}`}>
-          <img className="img-fluid" src={item.poster} alt={item.title}></img>
+          <img className="img-fluid" src={item.poster} alt={item.title} style={{height: "250px"}}></img>
         </Link>
       </div>
       <div className="mt-3">
@@ -64,7 +64,7 @@ export function Home() {
         <div className="col-md-2 col-sm-6" key={index}>
             <div className="card">
                 <Link to={`/movie/${item.id}`}>
-                <img className="img-fluid" src={item.poster} alt={item.title}></img>
+                <img className="img-fluid" src={item.poster} alt={item.title} style={{height: "250px"}}></img>
                 </Link>
             </div>
             <div className="mt-3">
@@ -86,7 +86,7 @@ export function Home() {
       <div className="col-md-2 col-sm-6" key={index}>
       <div className="card">
         <Link to={`/movie/${item.id}`}>
-          <img className="img-fluid" src={item.poster} alt={item.title}></img>
+          <img className="img-fluid" src={item.poster} alt={item.title} style={{height: "250px"}}></img>
         </Link>
       </div>
       <div className="mt-3">
