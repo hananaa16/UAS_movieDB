@@ -145,13 +145,13 @@ export function MovieDetail({ match }) {
           <img
             className="img-fluid"
             src={`http://image.tmdb.org/t/p/original/${detail.backdrop_path}`}
-            alt={detail.title}
+            alt={detail.title} style={{height:"400px"}}
           ></img>
           <div className="carousel-center">
             <i
               onClick={() => setIsOpen(true)}
               className="far fa-play-circle"
-              style={{ fontSize: 95, color: "#f4c10f", cursor: "pointer" }}
+              style={{ fontSize: 95, color: "white", cursor: "pointer" }}
             ></i>
           </div>
         </div>
