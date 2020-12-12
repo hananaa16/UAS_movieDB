@@ -70,7 +70,7 @@ export function MovieDetail({ match }) {
     genresList = genres.map((g, i) => {
       return (
         <li className="list-inline-item" key={i}>
-          <p style={{ color: "white", border: "1px solid", padding: "10px", borderRadius: "20px"}}>
+          <p style={{ color: "#43E6D5", border: "1px solid", padding: "10px", borderRadius: "20px"}}>
             {g.name}
           </p>
         </li>
@@ -160,7 +160,7 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "white", fontWeight: "bolder" }}>GENRE</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>GENRE</p>
         </div>
       </div>
 
@@ -180,7 +180,7 @@ export function MovieDetail({ match }) {
             ></ReactStars>
           </div>
           <div className="mt-3">
-            <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
+            <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
           </div>
         </div>
@@ -188,22 +188,22 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col-md-4">
-          <p style={{ color: "white", fontWeight: "bolder" }}>RELEASE DATE</p>
-          <p style={{ color: "#f4c10f" }}>{moment(detail.release_date).format("DD MMMM YYYY")}</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>RELEASE DATE</p>
+          <p style={{ color: "#F79A9C" }}>{moment(detail.release_date).format("DD MMMM YYYY")}</p>
         </div>
         <div className="col-md-4">
-          <p style={{ color: "white", fontWeight: "bolder" }}>RUN TIME</p>
-          <p style={{ color: "#f4c10f" }}>{detail.runtime}</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>RUN TIME</p>
+          <p style={{ color: "#F79A9C" }}>{detail.runtime}</p>
         </div>
         <div className="col-md-4">
-          <p style={{ color: "white", fontWeight: "bolder" }}>HOMEPAGE</p>
-          <p style={{ color: "#f4c10f" }}>{detail.homepage}</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>HOMEPAGE</p>
+          <p style={{ color: "#F79A9C" }}>{detail.homepage}</p>
         </div>
       </div>
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "white", fontWeight: "bolder" }}>CASTS</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>CASTS</p>
         </div>
       </div>
       <div className="row mt-3">{castList}</div>
