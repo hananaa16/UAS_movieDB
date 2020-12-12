@@ -69,9 +69,9 @@ export function MovieDetail({ match }) {
     genresList = genres.map((g, i) => {
       return (
         <li className="list-inline-item" key={i}>
-          <button type="button" className="btn btn-outline-info">
+          <p style={{ color: "white", border: "1px solid", padding: "10px", borderRadius: "20px"}}>
             {g.name}
-          </button>
+          </p>
         </li>
       );
     });
@@ -163,7 +163,7 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>GENRE</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>GENRE</p>
         </div>
       </div>
 
@@ -183,7 +183,7 @@ export function MovieDetail({ match }) {
             ></ReactStars>
           </div>
           <div className="mt-3">
-            <p style={{ color: "#5a606b", fontWeight: "bolder" }}>OVERVIEW</p>
+            <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
           </div>
         </div>
@@ -191,29 +191,29 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col-md-4">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>RELEASE DATE</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>RELEASE DATE</p>
           <p style={{ color: "#f4c10f" }}>{detail.release_date}</p>
         </div>
         <div className="col-md-4">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>RUN TIME</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>RUN TIME</p>
           <p style={{ color: "#f4c10f" }}>{detail.runtime}</p>
         </div>
         <div className="col-md-4">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>HOMEPAGE</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>HOMEPAGE</p>
           <p style={{ color: "#f4c10f" }}>{detail.homepage}</p>
         </div>
       </div>
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>CASTS</p>
+          <p style={{ color: "white", fontWeight: "bolder" }}>CASTS</p>
         </div>
       </div>
       <div className="row mt-3">{castList}</div>
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "#5a606b", fontWeight: "bolder" }}>
+          <p style={{ color: "white", fontWeight: "bolder", fontSize: "30px" }}>
             RECOMMENDED MOVIES
           </p>
         </div>
