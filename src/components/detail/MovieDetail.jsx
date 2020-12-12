@@ -141,6 +141,7 @@ export function MovieDetail({ match }) {
           }}
         ></MoviePlayerModal>
         <div className="col text-center" style={{ width: "100%" }}>
+          <h1>{detail.title}</h1>
           <img
             className="img-fluid"
             src={`http://image.tmdb.org/t/p/original/${detail.backdrop_path}`}
@@ -152,12 +153,6 @@ export function MovieDetail({ match }) {
               className="far fa-play-circle"
               style={{ fontSize: 95, color: "#f4c10f", cursor: "pointer" }}
             ></i>
-          </div>
-          <div
-            className="carousel-caption"
-            style={{ textAlign: "center", fontSize: 35 }}
-          >
-            {detail.title}
           </div>
         </div>
       </div>
