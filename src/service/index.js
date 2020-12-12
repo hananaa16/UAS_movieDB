@@ -1,4 +1,5 @@
 import axios from 'axios';
+import moment from 'moment';
 
 const apiKey = 'a5a91c505656ea92e6cf88e4f0756deb';
 const url = 'https://api.themoviedb.org/3';
@@ -29,7 +30,7 @@ export const fetchMovies = async () => {
             poster: posterUrl + m['poster_path'],
             overview: m['overview'],
             rating: m['vote_average'],
-            date: m['release_date'],
+            date: moment(m['release_date']).format("DD MMMM YYYY"),
         }))
 
         return modifiedData;
@@ -53,7 +54,7 @@ export const fetchMoviesUpcoming = async () => {
             title: m['title'],
             poster: posterUrl + m['poster_path'],
             overview: m['overview'],
-            date: m['release_date'],
+            date: moment(m['release_date']).format("DD MMMM YYYY"),
         }))
 
         return modifiedData;
