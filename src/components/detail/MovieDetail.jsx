@@ -70,7 +70,7 @@ export function MovieDetail({ match }) {
     genresList = genres.map((g, i) => {
       return (
         <li className="list-inline-item" key={i}>
-          <p style={{ color: "#43E6D5", border: "1px solid", padding: "10px", borderRadius: "20px"}}>
+          <p style={{ color: "white", border: "1px solid", padding: "10px", borderRadius: "20px"}}>
             {g.name}
           </p>
         </li>
@@ -90,7 +90,7 @@ export function MovieDetail({ match }) {
         <p className="font-weight-bold text-center">{c.name}</p>
         <p
           className="font-weight-light text-center"
-         style={{ color: "lightyellow" }}
+         style={{ color: "F0ED4C" }}
         >
           {c.character}
         </p>
@@ -160,20 +160,20 @@ export function MovieDetail({ match }) {
 
       <div className="row mt-3">
         <div className="col">
-          <p style={{ color: "white", fontWeight: "bolder" }}>GENRE</p>
+          <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>GENRE</p>
         </div>
       </div>
 
-      <div className="row mt-2">
+      <div className="row mt-1">
         <div className="col">
-          <ul className="list-inline" style={{ color: "white" }}>{genresList}</ul>
+          <ul className="list-inline">{genresList}</ul>
         </div>
       </div>
 
       <div className="row mt-3">
         <div className="col">
+          <p style={{ color: "yellow", fontWeight: "bolder" }}>RATING</p>
           <div className="text-center">
-            <p style={{ color: "yellow", fontWeight: "bolder" }}>RATING</p>
             <ReactStars
               count={detail.vote_average}
               size={20}
