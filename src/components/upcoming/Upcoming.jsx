@@ -25,7 +25,7 @@ export function MovieUpcoming() {
                     </Link>
                 </div>
                 <div className="mt-3">
-                    <p style={{ fontWeight: "bolder", color="black"}}>{item.title}</p>
+                    <p style={{ fontWeight: "bolder", color:"black"}}>{item.title}</p>
                     <p style={{ color:"black" }}>{item.date}</p>
                 </div>
                </div>
