@@ -82,7 +82,7 @@ export function MovieDetail({ match }) {
     return (
       <div className="col-sm-2 text-center" key={i}>
         <img
-          className="img-fluid rounded-circle mx-auto d-block"
+          className="img-fluid mx-auto d-block"
           src={c.img}
           alt={c.name}
            style={{borderRadius:"2em"}}
