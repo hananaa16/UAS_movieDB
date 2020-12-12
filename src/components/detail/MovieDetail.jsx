@@ -11,6 +11,7 @@ import ReactPlayer from "react-player";
 import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import { Nav, Navbar } from 'react-bootstrap';
+import moment from 'moment';
 
 export function MovieDetail({ match }) {
   let params = match.params;
@@ -192,7 +193,7 @@ export function MovieDetail({ match }) {
       <div className="row mt-3">
         <div className="col-md-4">
           <p style={{ color: "white", fontWeight: "bolder" }}>RELEASE DATE</p>
-          <p style={{ color: "#f4c10f" }}>{detail.release_date}</p>
+          <p style={{ color: "#f4c10f" }}>{moment(detail.release_date).format("DD MMMM YYYY")}</p>
         </div>
         <div className="col-md-4">
           <p style={{ color: "white", fontWeight: "bolder" }}>RUN TIME</p>
