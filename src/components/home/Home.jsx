@@ -131,7 +131,7 @@ export function Home() {
         <div className="row mt-3">
           {playing}
         </div>
-      </div>
+      </div><br></br>
       </div>
       </div>
       <div className="container mt-2">
