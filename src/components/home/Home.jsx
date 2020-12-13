@@ -122,8 +122,8 @@ export function Home() {
         >
           {movies}
         </RBCarousel>
-      </div><br></br>
       </div>
+      </div><br></br>
       <div className="mt-2" style={{backgroundColor: "#E16F56"}}>
       <div className="container">
       <div className="row mt-2">
@@ -149,7 +149,7 @@ export function Home() {
         <div className="row mt-3">
           {up}
         </div>
-      </div>
+      </div><br></br>
       </div>
       </div>
       <div className="container">
