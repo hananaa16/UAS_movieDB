@@ -90,7 +90,7 @@ export function MovieDetail({ match }) {
         <p className="font-weight-bold text-center">{c.name}</p>
         <p
           className="font-weight-light text-center"
-         style={{ color: "F0ED4C" }}
+         style={{ color: "#FE9E54" }}
         >
           {c.character}
         </p>
