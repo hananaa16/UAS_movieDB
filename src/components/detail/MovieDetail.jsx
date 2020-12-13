@@ -164,7 +164,7 @@ export function MovieDetail({ match }) {
         </div>
       </div>
 
-      <div className="row mt-1">
+      <div className="row mt-3">
         <div className="col">
           <ul className="list-inline">{genresList}</ul>
         </div>
@@ -180,17 +180,14 @@ export function MovieDetail({ match }) {
               color1={"#f4c10f"}
             ></ReactStars>
           </div>
-        </div>
-      </div>
-        
-      <div className="row mt-3">
-        <div className="col">
-          <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
+          <div className="mt-3 pt-3">
+            <p style={{ color: "white", fontWeight: "bolder" }}>OVERVIEW</p>
             {detail.overview}
+          </div>
         </div>
       </div>
 
-      <div className="row mt-3">
+      <div className="row mt-3 pt-3">
         <div className="col-md-4">
           <p style={{ color: "#43E6D5", fontWeight: "bolder" }}>RELEASE DATE</p>
           <p style={{ color: "#F79A9C" }}>{moment(detail.release_date).format("DD MMMM YYYY")}</p>
